@@ -1,0 +1,267 @@
+/* * {
+	background-color: #d59ea5; 
+	border: 1px solid #00f;
+} */
+
+
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 700;
+	src: url('/device/fonts/web/gilroyextrabold.woff') format('woff'),
+		 url('/device/fonts/web/gilroyextrabold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 400;
+	src: url('/device/fonts/web/gilroylight.woff') format('woff'),
+		 url('/device/fonts/web/gilroylight.woff2') format('woff2');
+}
+
+
+body {
+	position: relative;
+
+	min-width: 1200px;
+	min-height: 100vh;
+
+	font-family: 'Gilroy', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	line-height: 30px;
+	font-weight: 300;
+
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+  }
+
+  .container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+
+.main-header {
+	display: flex;
+    flex-direction: column;
+	
+	background-color: rgba(240, 197, 46, 0.5);
+	margin-top: 40px;
+	margin-left: 140px;
+	margin-right: 140px;
+}
+
+h1 {
+	margin-left: 50px;
+	transform: translate(0, -40px);
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	
+	margin-left: 50px;
+	padding-bottom: 150px;
+
+}
+
+.navigation li {
+	list-style-type: none;
+}
+
+
+.search-navigation {
+	display: flex;
+
+	position: relative;  
+	width: 441px;
+	white-space: nowrap;
+  }
+  
+  .search-navigation input {
+	height: 34px;
+	width: 356px;
+	margin: 0;
+	padding-top: 2px;
+	padding-left: 39px;
+	padding-bottom: 11px;
+	border: 0;
+  
+	font-family: "Gilroy", Tahoma, sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	line-height: 36px;
+	font-weight: 300;
+	opacity: 0.3;
+	border-bottom: 2px solid transparent;
+	background-color: transparent;
+  }
+  
+  .search-navigation::before {
+	content: "";
+  
+	position: absolute;
+	top: 12px;
+	left: 3px;
+  
+	width: 16px;
+	height: 16px;
+  
+	background-image: url("../device/device/svg/search.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+  }
+  
+  .search-navigation input:hover {
+	opacity: 0.6;
+	border-bottom: 2px solid transparent;
+  }
+  
+  .search-navigation input:focus,
+  .search-navigation input:active {
+	opacity: 1;
+	border-bottom: 2px solid #000000;
+	outline: none;
+  }
+  
+  .search-navigation-input:focus + .search {
+	display: block;
+  }
+  
+  .navigation button {
+	display: none;
+  
+	height: 49px;
+	width: 85px;
+	padding: 0;
+	margin: 0;
+	border: 2px solid #000000;
+	border-radius: 0;
+	background-color: transparent;
+  }
+  
+  .navigation button:hover,
+  .navigation button:focus {
+	display: block;
+  
+	color: #ffffff;
+	background-color: #000000;
+	outline: none;
+  }
+  
+  .navigation button:active {
+	display: block;
+  
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #000000;
+	outline: none;
+  }
+  
+
+
+.user-navigation {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;	
+}
+
+
+.user-navigation .search {
+	margin-right: 64vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.user-navigation .login-link {
+	margin-right: 10px;
+	top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.user-navigation .compare {
+	margin-left: 220px;
+}
+
+.user-navigation .basket,
+.site-navigation .contact {
+	margin-right: 60px;
+}
+
+.site-navigation {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.site-navigation .catalog {
+	margin-right: 630px;
+}
+
+.site-navigation .delivery {
+	margin-right: 80px;
+}
+
+.slider {
+	margin-left: 230px;
+}
+
+.slider .tripod {
+	/* position: absolute;  */
+
+	transform: translate(0, -105px);
+	margin-right: auto;
+}
+
+.layer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.info {
+	 margin-right: 380px; 
+	
+}
+
+.number {
+	display: flex;
+	flex-wrap: nowrap;
+	transform: translate(0, -80px);
+}
+
+.minus {
+	width: 100px;
+	height: 8px;
+	margin-right: 400px;
+	transform: translate(0, -90px);
+}
+
+.one {
+	color: #fff;
+	font-size: 200px;
+	transform: translate(0, -80px);
+	margin-left: 200px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 50px;
+	margin-top: -267px;
+}
+
+p {
+	margin-right: 320px;
+	font-size: 20px;
+}  
