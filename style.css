@@ -148,6 +148,7 @@ h1 {
 	border: 2px solid #000000;
 	border-radius: 0;
 	background-color: transparent;
+	cursor: pointer;
   }
   
   .navigation button:hover,
@@ -183,7 +184,7 @@ h1 {
     bottom: 0;
 }
 
-.user-navigation .login-link {
+.user-navigation .login {
 	margin-right: 10px;
 	top: 0;
     right: 0;
@@ -194,7 +195,7 @@ h1 {
 	margin-left: 220px;
 }
 
-.user-navigation .basket,
+.user-navigation .cart,
 .site-navigation .contact {
 	margin-right: 60px;
 }
