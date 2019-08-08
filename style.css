@@ -573,7 +573,7 @@ li {
 }
 
 .populars:active {
-	background-color: #f0c52e;
+	background-color: rgba(240, 197, 46, 0.5);
   opacity: 0.5;
 }
 
@@ -586,6 +586,6 @@ h3 {
 		flex-direction:column;
 	}
 
-	/* .populars-img {
+	.populars-img {
 		margin-bottom: 500px;
-	} */
+	}  
