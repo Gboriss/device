@@ -563,9 +563,12 @@ li {
 	width: 200px;
 	height: 200px;
 	background-color: rgba(240, 197, 46, 0.5);
-
 }
 
+.mm {
+	display: flex;
+	flex-direction:column;
+}
 .populars:hover,
 .populars:focus {
 	background-color: #f0c52e;
@@ -581,11 +584,8 @@ h3 {
 	margin-left: 40px;
 }
 
-	.mm {
-		display: flex;
-		flex-direction:column;
-	}
+	
 
 	.populars-img {
-		margin-bottom: 500px;
+		/* margin-bottom: 500px; */
 	}  
