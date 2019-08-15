@@ -356,10 +356,6 @@ li {
 	transform: translate(-180px, -120px);
 }
 
-/* .slide-third {
-	transform: translate(-215px, 0);
-} */
-
 .slide {
   display: none;
   margin: 0;
@@ -379,6 +375,8 @@ li {
 	user-select: none;  
 	cursor: pointer; 
 }
+
+
 
 .slider-text {
   display: block;
@@ -494,7 +492,8 @@ li {
   text-align: center;
   text-transform: uppercase;
 
-  text-decoration: none;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .button::after {
@@ -542,7 +541,9 @@ li {
 #product-3:checked ~ .container label[for="product-3"] {
   background-image: url("../device/device/svg/radio-on.svg");
 }
-
+.main-index {
+	margin-bottom: 150px;
+}
 .main-index input {
   display: none;
 }
@@ -550,7 +551,7 @@ li {
 .popular-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 105px;
+	margin-left: 115px;
 }
 
 .populars {
@@ -558,9 +559,9 @@ li {
 	justify-content: center;
 	align-items: center;
 
-	margin-right: 80px;
-	width: 200px;
-	height: 200px;
+	margin-right: 90px;
+	width: 185px;
+	height: 185px;
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
@@ -580,8 +581,154 @@ li {
   opacity: 0.5;
 }
 
-h3 {
-	margin-left: 
+.info {
+	max-width: 100%;
+	position: relative;
+	min-height: 288px;
+	margin-top: 84px;
+	margin-bottom: 95px;
+	padding: 0;
+	background-color: #e5e5e5;
 }
 
-	
+.info-block {
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+
+.info-text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.info-navigation {
+	display: flex;	
+	flex-direction: column;
+
+	margin-left: 150px;
+	transform: translate(0, -20px);
+}
+
+.info-about-us {
+  display: none;
+	transform: translate(0, -30px);
+
+  margin-left: 250px; 
+}
+
+
+.info-navigation label {
+  z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-bottom: 27px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+	display: none;
+} 
+
+#info-button-1:checked ~ .container #delivery,
+#info-button-2:checked ~ .container #warranty,
+#info-button-3:checked ~ .container #credit {
+	display: block;
+}
+
+#info-button-1:checked ~ .container  label[for="info-button-1"],
+#info-button-2:checked ~ .container  label[for="info-button-2"],
+#info-button-3:checked ~ .container  label[for="info-button-3"] {
+  color: #f7e184;
+}
+
+#info-button-1:checked ~ .container label[for=info-button-1]::after,
+#info-button-2:checked ~ .container label[for=info-button-2]::after,
+#info-button-3:checked ~ .container label[for=info-button-3]::after {
+  top: 50%;
+  width: 280px;
+  height: 100%;
+  background-color: #000000;
+}
+
+.info-navigation::before {
+  content: "";
+
+  position: absolute;
+  top: -80px;
+  left: 277px;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+}
+
+.info-about {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 47px;
+  letter-spacing: 0.01em;
+  line-height: normal;
+  font-weight: 800;
+  color: #000000;
+}
+
+.info-about-us p {
+  font-size: 18px;
+}
+
+.delivery-icon {
+	background-image: url("../device/device/svg/delivery.svg");
+		
+  position: absolute;
+  top: 13px;
+  left: 558px;
+  width: 136px;
+  height: 164px;
+
+}
+
+ .warranty-icon {
+  position: absolute;
+  top:-7px;
+  left: 580px;
+  width: 171px;
+  height: 195px;
+  background-image: url("../device/device/svg/warranty.svg");
+
+}
+
+.credit-icon {
+  position: absolute;
+  top:-7px;
+  left: 534px;
+  width: 156px;
+  height: 188px;
+  background-image: url("../device/device/svg/credit.svg");
+} 
+
+
+.logo-list {
+	display: flex;
+	justify-content: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: 80px;
+}
+
+.logo-list-li {
+	filter: grayscale(100%); 
+	opacity: 0.2;
+}
+
+.logo-list-li:hover {
+	filter: grayscale(0); 
+	opacity: 1;
+	cursor: pointer;
+}
