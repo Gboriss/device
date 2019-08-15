@@ -60,7 +60,7 @@ a {
 
 .main-header {
 	display: flex;
-    flex-direction: column;
+  flex-direction: column;
 	
 	background-color: rgba(240, 197, 46, 0.5);
 	margin-top: 40px;
@@ -679,7 +679,9 @@ li {
   color: #000000;
 }
 
-.info-about-us p {
+.info-about-us p,
+.company p,
+.contacts p {
   font-size: 18px;
 }
 
@@ -701,7 +703,6 @@ li {
   width: 171px;
   height: 195px;
   background-image: url("../device/device/svg/warranty.svg");
-
 }
 
 .credit-icon {
@@ -720,6 +721,7 @@ li {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-left: 80px;
+	margin-bottom: 90px;
 }
 
 .logo-list-li {
@@ -731,4 +733,66 @@ li {
 	filter: grayscale(0); 
 	opacity: 1;
 	cursor: pointer;
+}
+
+.company {
+	display: flex;
+	justify-content: flex-start;
+	justify-content: space-between;
+	margin-left: 180px;
+	margin-bottom: 80px;
+}
+
+.line::before {
+	content: "";
+	position: absolute;
+	transform: translate(0, -40px);
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+}
+
+.about-us {
+	display: flex;
+	flex-direction: column;
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	margin-right: 90px;
+}
+
+.about-us-title,
+.contacts-title {
+	margin: 0;
+	margin-bottom: 26px;
+	font-family: "Gilroy", Tahoma, sans-serif;
+	font-size: 47px;
+	letter-spacing: 0.01em;
+	line-height: normal;
+	font-weight: 800;
+	color: #000000;
+}
+
+.transport {
+	padding-left: 35px;
+
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+  list-style: none;
+}
+
+.about-us-button,
+.write-us {
+  max-width: 260px;
+  cursor: pointer;
+}
+
+.transport,
+.button-map {
+	margin-bottom: 50px;
 }
