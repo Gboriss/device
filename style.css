@@ -796,3 +796,11 @@ li {
 .button-map {
 	margin-bottom: 50px;
 }
+
+.main-footer {
+	position: relative;
+	max-width: 100%;
+	min-height: 288px;
+	padding: 0;
+	background-color: #464646;
+}
