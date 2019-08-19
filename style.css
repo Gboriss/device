@@ -69,11 +69,17 @@ a {
 }
 
 h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+}
+
+.logo-header {
 	margin-left: 50px;
 	transform: translate(0, -40px);
-	text-transform: uppercase;
-	font-size: 40px;
 }
+
+
+
 
 .navigation {
 	display: flex;
@@ -737,10 +743,10 @@ li {
 
 .company {
 	display: flex;
-	justify-content: flex-start;
-	justify-content: space-between;
-	margin-left: 180px;
-	margin-bottom: 80px;
+	justify-content: space-around;
+	
+	margin-left: 40px;
+	margin-bottom: 100px;
 }
 
 .line::before {
@@ -798,9 +804,30 @@ li {
 }
 
 .main-footer {
+	display: flex;
+	justify-content: space-around;
 	position: relative;
 	max-width: 100%;
 	min-height: 288px;
 	padding: 0;
 	background-color: #464646;
+}
+
+
+.footer-address {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-dev {
+	color: #ffc600;
+}
+
+.main-footer p {
+	color: #fff;
+}
+
+.main-footer .line::before {
+	transform: translate(0, 40px);
+	background-color: #ffc600;
 }
