@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 700;
+	src: url('/device/fonts/web/gilroyextrabold.woff') format('woff'),
+		 url('/device/fonts/web/gilroyextrabold.woff2') format('woff2');
+		}
+		
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 400;
+	src: url('/device/fonts/web/gilroylight.woff') format('woff'),
+	url('/device/fonts/web/gilroylight.woff2') format('woff2');
+}
+
+
+body {
+	position: relative;
+	
+	min-width: 1200px;
+	min-height: 100vh;
+	
+	font-family: 'Gilroy', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	font-weight: 300;
+	
+	/* overflow: hidden; */
+	
+	opacity: 0;
+	animation: fade-in .4s forwards;
+}
+
+@keyframes fade-in {
+	to {
+		opacity: 1;
+	}
+}
+

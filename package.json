@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Gboriss/device/issues"
   },
-  "homepage": "https://github.com/Gboriss/device#readme"
+  "homepage": "https://github.com/Gboriss/device#readme",
+  "devDependencies": {
+    "sass": "^1.22.10"
+  }
 }

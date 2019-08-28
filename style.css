@@ -1,47 +1,9 @@
-/* * {
+@import './variables.scss';
+
+/*  {
 	background-color: #d59ea5; 
 	border: 1px solid #00f;
 } */
-
-
-@font-face {
-	font-family: 'Gilroy';
-	font-weight: 700;
-	src: url('/device/fonts/web/gilroyextrabold.woff') format('woff'),
-		 url('/device/fonts/web/gilroyextrabold.woff2') format('woff2');
-		}
-		
-@font-face {
-	font-family: 'Gilroy';
-	font-weight: 400;
-	src: url('/device/fonts/web/gilroylight.woff') format('woff'),
-	url('/device/fonts/web/gilroylight.woff2') format('woff2');
-}
-
-
-body {
-	position: relative;
-	
-	min-width: 1200px;
-	min-height: 100vh;
-	
-	font-family: 'Gilroy', sans-serif;
-	font-size: 15px;
-	letter-spacing: 0.01em;
-	font-weight: 300;
-	
-	background-color: #fff;
-	/* overflow: hidden; */
-	
-	opacity: 0;
-	animation: fade-in .4s forwards;
-}
-
-@keyframes fade-in {
-	to {
-		opacity: 1;
-	}
-}
 
 
 a {
@@ -75,9 +37,6 @@ h1 {
 	transform: translate(0, -40px);
 }
 
-
-
-
 .navigation {
 	display: flex;
 	justify-content: space-between;
@@ -91,97 +50,14 @@ li {
 	list-style-type: none;
 }
 
-
 .search-navigation {
 	display: flex;
 	flex-basis: 50%;
 
 	position: relative;  
-	width: 441px;
 	white-space: nowrap;
   }
   
-.search-navigation input {
-	height: 34px;
-	width: 356px;
-	margin: 0;
-	padding-top: 2px;
-	padding-left: 39px;
-	padding-bottom: 11px;
-	border: 0;
-  
-	font-family: "Gilroy", Tahoma, sans-serif;
-	font-size: 15px;
-	letter-spacing: 0.01em;
-	line-height: 36px;
-	font-weight: 300;
-	opacity: 0.3;
-	border-bottom: 2px solid transparent;
-	background-color: transparent;
-  }
-  
-.search-navigation::before {
-	content: "";
-  
-	position: absolute;
-	top: 12px;
-	left: 3px;
-  
-	width: 16px;
-	height: 16px;
-  
-	background-image: url("../device/device/svg/search.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-  }
-  
-.search-navigation input:hover {
-	opacity: 0.6;
-	border-bottom: 2px solid transparent;
-  }
-  
-.search-navigation input:focus,
-.search-navigation input:active {
-	opacity: 1;
-	border-bottom: 2px solid #000000;
-	outline: none;
-  }
-  
-.search-navigation-input:focus + .search {
-	display: block;
-  }
-  
-.navigation button {
-	display: none;
-  
-	height: 49px;  
-	width: 85px;
-	padding: 0;
-	margin: 0;
-	border: 2px solid #000000;
-	border-radius: 0;
-	background-color: transparent;
-	cursor: pointer;
-  }
-  
-.navigation button:hover,
-.navigation button:focus {
-		display: block;
-  
-		color: #ffffff;
-		background-color: #000000;
-		outline: none;
-  }
-  
-.navigation button:active {
-	display: block;
-  
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #000000;
-	outline: none;
-  }
-  
-
 
 .user-navigation {
   display: flex;
@@ -194,41 +70,27 @@ li {
 	line-height: 36px;
 }
 
-
 .user-navigation .login {
 	margin-right: 10px;
 }
-
-
 
 .user-navigation .compare {
 	margin-left: auto;
 	margin-right: 40px;
 }
 
-
-
 .user-navigation .cart,
 .site-navigation .contact {
 	margin-right: 60px;
 }
 
-.compare-link:hover,
-.cart-link:hover,
-.login-link:hover,
-.profile-link:hover,
-.compare-link:focus,
-.cart-link:focus,
-.login-link:focus,
-.profile-link:focus {
+.links:hover,
+.links:focus {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.compare-link:active,
-.cart-link:active,
-.login-link:active,
-.profile-link:active {
+.links:active {
   opacity: 0.3;
 }
 
@@ -241,7 +103,7 @@ li {
 	line-height: normal;
 	font-weight: 800;
 	text-transform: uppercase;
-  }
+ }
   
 .main-navigation li {
 	white-space: nowrap;
@@ -254,31 +116,22 @@ li {
 	padding: 0;
 	margin: 0 auto;
 }
-  
-
+ 
 .catalog {
 	position: relative;
 	flex-basis: 38%;
 }
-
-  
  
 .site-navigation .drop-menu {
-	/* position: absolute; */
-	z-index: 3;
-  
+	position: absolute;
 	display: none;
+	z-index: 3;
+	
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: stretch;
 	align-content: flex-start;
 
-  /* left: -60px; */
-	/* width: 1600px; */
-	height: 135px;
-  
-	margin: 0;
-	padding: 0;
 	padding-top: 25px;
 	background: #f7e296;
   
@@ -294,20 +147,12 @@ li {
 }
   
 
-.drop-menu a {
-	display: flex;
-	letter-spacing: normal;
-	text-transform: none;
-}
-  
 .catalog:hover .drop-menu {
 	display: flex;
 }
   
-.search-navigation,
-.site-navigation,
-.user-navigation,
-.drop-menu {
+
+.navig {
 	list-style: none;
 }
   
@@ -318,10 +163,8 @@ li {
 	color: #000000;
  }
   
-.site-navigation a:hover,
-.search-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:focus {
+.navig a:hover,
+.navig a:focus {
 	color: rgba(0, 0, 0, 0.6);
 	cursor: pointer;
  }
@@ -512,15 +355,15 @@ li {
   padding: 0;
 }
 
-#product-1:checked ~ .container #slide1,
-#product-2:checked ~ .container #slide2,
-#product-3:checked ~ .container #slide3 {
+#product-1:checked ~ .center #slide1,
+#product-2:checked ~ .center #slide2,
+#product-3:checked ~ .center #slide3 {
   display: flex;
 }
 
-#product-1:checked ~ .container label[for="product-1"],
-#product-2:checked ~ .container label[for="product-2"],
-#product-3:checked ~ .container label[for="product-3"] {
+#product-1:checked ~ .center label[for="product-1"],
+#product-2:checked ~ .center label[for="product-2"],
+#product-3:checked ~ .center label[for="product-3"] {
   background-image: url("../device/device/svg/radio-on.svg");
 }
 .main-index {
@@ -616,21 +459,21 @@ li {
 	display: none;
 } 
 
-#info-button-1:checked ~ .info #delivery,
-#info-button-2:checked ~ .container #warranty,
-#info-button-3:checked ~ .container #credit {
+#info-button-1:checked ~ .center #delivery,
+#info-button-2:checked ~ .center #warranty,
+#info-button-3:checked ~ .center #credit {
 	display: block;
 }
 
-#info-button-1:checked ~ .info  label[for="info-button-1"],
-#info-button-2:checked ~ .container  label[for="info-button-2"],
-#info-button-3:checked ~ .container  label[for="info-button-3"] {
+#info-button-1:checked ~ .center  label[for="info-button-1"],
+#info-button-2:checked ~ .center  label[for="info-button-2"],
+#info-button-3:checked ~ .center  label[for="info-button-3"] {
   color: #f7e184;
 }
 
-#info-button-1:checked ~ .info label[for=info-button-1]::after,
-#info-button-2:checked ~ .container label[for=info-button-2]::after,
-#info-button-3:checked ~ .container label[for=info-button-3]::after {
+#info-button-1:checked ~ .center label[for=info-button-1]::after,
+#info-button-2:checked ~ .center label[for=info-button-2]::after,
+#info-button-3:checked ~ .center label[for=info-button-3]::after {
   top: 50%;
   width: 280px;
   height: 100%;
